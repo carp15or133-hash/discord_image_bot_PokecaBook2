@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # === 設定 ===
 PAGE_URL = "https://pokecabook.com/archives/1417"
-WEBHOOK_URL = "https://discord.com/api/webhooks/1424388844308135969/R7AMAJeIsJJb_BMwqJJDqSSN2RiV8fJZo8OBMgFvxRvKXnEvHolljNFHfZ3RZn-nDaTo"
+WEBHOOK_URL = "https://discord.com/api/webhooks/xxxx"
 
     def main():
     # 1️⃣ ページ取得
