@@ -3,6 +3,13 @@ from bs4 import BeautifulSoup
 import os
 import time   # ← ここ追加
 
+# デバック用
+print("画像取得レスポンス:", requests.get(PAGE_URL).status_code)
+print("Webhook:", WEBHOOK_URL[:20], "...(先頭だけ)")
+print("レスポンスコード:", res.status_code)
+print("レスポンス本文:", res.text)
+
+
 # --- Discord 投稿をリトライする関数（追加） ---
 def post_with_retry(url, files=None, data=None, max_retries=3, retry_wait=5):
     for attempt in range(1, max_retries + 1):
