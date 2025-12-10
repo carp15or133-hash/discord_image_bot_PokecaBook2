@@ -69,14 +69,14 @@ def main():
             f.write(img_data)
 
         # テキストメッセージ（投稿URLを添える）
-        data = {"content": f"**投稿画像 {i+1}**：\n元記事: {PAGE_URL}"}
+        # data = {"content": f"**投稿画像 {i+1}**：\n元記事: {PAGE_URL}"}
 
         # リトライ投稿
         with open(filename, 'rb') as f:
             success = post_with_retry(
                 WEBHOOK_URL,
                 files={"file": f},
-                data=data # テキストメッセージも送信
+                # data=data # テキストメッセージも送信
             )
 
         # 4️⃣ ダウンロードしたファイルを削除（★追加）
