@@ -48,7 +48,7 @@ def main():
         height = img.get("height")
 
         # --- サイズ + ティア表 で条件抽出
-        if width == "800" and height == "450" in src:
+        if width == "800" and height == "450":
         #if width == "800" and height == "450" and "ティア表" in src:
             images.append(src)
 
