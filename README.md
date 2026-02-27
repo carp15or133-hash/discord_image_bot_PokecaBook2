@@ -1,2 +1,3 @@
 # discord_image_bot_PokecaBook2
 Post_PokecaBook
+60日で止まってしまうためコメント1
